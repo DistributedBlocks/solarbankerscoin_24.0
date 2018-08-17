@@ -1,10 +1,10 @@
 
 
-DistributedBlocks is a next-generation cryptocurrency.
+SolarBankesCoinis a next-generation cryptocurrency.
 
-DistributedBlocks improves on Bitcoin in too many ways to be addressed here.
+SolarBankesCoinimproves on Bitcoin in too many ways to be addressed here.
 
-DistributedBlocks is a small part of OP Redecentralize and OP Darknet Plan.
+SolarBankesCoinis a small part of OP Redecentralize and OP Darknet Plan.
 
 ## Links
 
@@ -18,16 +18,16 @@ DistributedBlocks is a small part of OP Redecentralize and OP Darknet Plan.
 - [Installation](#installation)
     - [Go 1.10+ Installation and Setup](#go-110-installation-and-setup)
     - [Go get DistributedBlocks](#go-get-DistributedBlocks)
-    - [Run DistributedBlocks from the command line](#run-DistributedBlocks-from-the-command-line)
-    - [Show DistributedBlocks node options](#show-DistributedBlocks-node-options)
-    - [Run DistributedBlocks with options](#run-DistributedBlocks-with-options)
+    - [Run SolarBankesCoinfrom the command line](#run-DistributedBlocks-from-the-command-line)
+    - [Show SolarBankesCoinnode options](#show-DistributedBlocks-node-options)
+    - [Run SolarBankesCoinwith options](#run-DistributedBlocks-with-options)
     - [Docker image](#docker-image)
     - [Building your own images](#building-your-own-images)
 - [API Documentation](#api-documentation)
     - [REST API](#rest-api)
     - [JSON-RPC 2.0 API](#json-rpc-20-api)
-    - [DistributedBlocks command line interface](#DistributedBlocks-command-line-interface)
-- [Integrating DistributedBlocks with your application](#integrating-DistributedBlocks-with-your-application)
+    - [SolarBankesCoincommand line interface](#DistributedBlocks-command-line-interface)
+- [Integrating SolarBankesCoinwith your application](#integrating-DistributedBlocks-with-your-application)
 - [Contributing a node to the network](#contributing-a-node-to-the-network)
 - [URI Specification](#uri-specification)
 - [Development](#development)
@@ -56,7 +56,7 @@ DistributedBlocks is a small part of OP Redecentralize and OP Darknet Plan.
 
 ## Installation
 
-DistributedBlocks supports go1.10+.
+SolarBankesCoinsupports go1.10+.
 
 ### Go 1.10+ Installation and Setup
 
@@ -65,53 +65,53 @@ DistributedBlocks supports go1.10+.
 ### Go get DistributedBlocks
 
 ```sh
-go get github.com/distributedblocks/DistributedBlocks_24.0/...
+go get github.com/distributedblocks/solarbankerscoin_24.0/...
 ```
 
-This will download `github.com/DistributedBlocks/DistributedBlocks_24.0` to `$GOPATH/src/github.com/DistributedBlocks/DistributedBlocks_24.0`.
+This will download `github.com/DistributedBlocks/DistributedBlocks_24.0` to `$GOPATH/src/github.com/DistributedBlocks/solarbankerscoin_24.0`.
 
-You can also clone the repo directly with `git clone https://github.com/DistributedBlocks/DistributedBlocks_24.0`,
-but it must be cloned to this path: `$GOPATH/src/github.com/DistributedBlocks/DistributedBlocks`.
+You can also clone the repo directly with `git clone https://github.com/DistributedBlocks/solarbankerscoin_24.0`,
+but it must be cloned to this path: `$GOPATH/src/github.com/DistributedBlocks/solarbankerscoin`.
 
-### Run DistributedBlocks from the command line
+### Run SolarBankesCoinfrom the command line
 
 ```sh
-cd $GOPATH/src/github.com/DistributedBlocks/DistributedBlocks_24.0
+cd $GOPATH/src/github.com/DistributedBlocks/solarbankerscoin_24.0
 make run
 ```
 
-### Show DistributedBlocks node options
+### Show SolarBankesCoinnode options
 
 ```sh
-cd $GOPATH/src/github.com/DistributedBlocks/DistributedBlocks_24.0
+cd $GOPATH/src/github.com/DistributedBlocks/solarbankerscoin_24.0
 make run-help
 ```
 
-### Run DistributedBlocks with options
+### Run SolarBankesCoinwith options
 
 Example:
 
 ```sh
-cd $GOPATH/src/github.com/DistributedBlocks/DistributedBlocks_24.0
+cd $GOPATH/src/github.com/DistributedBlocks/solarbankerscoin_24.0
 make ARGS="--launch-browser=false -data-dir=/custom/path" run
 ```
 
 ### Docker image
 
-This is the quickest way to start using DistributedBlocks using Docker.
+This is the quickest way to start using SolarBankesCoinusing Docker.
 
 ```sh
 $ docker volume create DistributedBlocks-data
 $ docker volume create DistributedBlocks-wallet
 $ docker run -ti --rm \
-    -v DistributedBlocks-data:/data/.DistributedBlocks \
+    -v DistributedBlocks-data:/data/.SolarBankesCoin\
     -v DistributedBlocks-wallet:/wallet \
     -p 6000:6000 \
     -p 6420:6420 \
-    DistributedBlocks/DistributedBlocks
+    DistributedBlocks/solarbankerscoin
 ```
 
-This image has a `DistributedBlocks` user for the DistributedBlocks daemon to run, with UID and GID 10000.
+This image has a `DistributedBlocks` user for the SolarBankesCoindaemon to run, with UID and GID 10000.
 When you mount the volumes, the container will change their owner, so you
 must be aware that if you are mounting an existing host folder any content you
 have there will be own by 10000.
@@ -121,7 +121,7 @@ by just appending flags at the end of the `docker run` command. The following
 example will show you the available options.
 
 ```sh
-docker run --rm DistributedBlocks/DistributedBlocks -help
+docker run --rm DistributedBlocks/SolarBankesCoin-help
 ```
 
 Access the dashboard: [http://localhost:6420](http://localhost:6420).
@@ -150,13 +150,13 @@ and the vim editor among other tools.
 
 [JSON-RPC 2.0 README](src/api/webrpc/README.md).
 
-### DistributedBlocks command line interface
+### SolarBankesCoincommand line interface
 
 [CLI command API](cmd/cli/README.md).
 
-## Integrating DistributedBlocks with your application
+## Integrating SolarBankesCoinwith your application
 
-[DistributedBlocks Integration Documentation](INTEGRATION.md)
+[SolarBankesCoinIntegration Documentation](INTEGRATION.md)
 
 ## Contributing a node to the network
 
@@ -165,18 +165,18 @@ This file will be periodically uploaded to https://distributedBlocks.com/peers.t
 and used to seed client with peers.
 
 *Note*: Do not add Skywire nodes to `peers.txt`.
-Only add DistributedBlocks nodes with high uptime and a static IP address (such as a DistributedBlocks node hosted on a VPS).
+Only add SolarBankesCoinnodes with high uptime and a static IP address (such as a SolarBankesCoinnode hosted on a VPS).
 
 ## URI Specification
 
-DistributedBlocks URIs obey the same rules as specified in Bitcoin's [BIP21](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki).
+SolarBankesCoinURIs obey the same rules as specified in Bitcoin's [BIP21](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki).
 They use the same fields, except with the addition of an optional `hours` parameter, specifying the coin hours.
 
-Example DistributedBlocks URIs:
+Example SolarBankesCoinURIs:
 
-* `DistributedBlocks:2hYbwYudg34AjkJJCRVRcMeqSWHUixjkfwY`
-* `DistributedBlocks:2hYbwYudg34AjkJJCRVRcMeqSWHUixjkfwY?amount=123.456&hours=70`
-* `DistributedBlocks:2hYbwYudg34AjkJJCRVRcMeqSWHUixjkfwY?amount=123.456&hours=70&label=friend&message=Birthday%20Gift`
+* solarbankerscoin:2hYbwYudg34AjkJJCRVRcMeqSWHUixjkfwY`
+* solarbankerscoin:2hYbwYudg34AjkJJCRVRcMeqSWHUixjkfwY?amount=123.456&hours=70`
+* solarbankerscoin:2hYbwYudg34AjkJJCRVRcMeqSWHUixjkfwY?amount=123.456&hours=70&label=friend&message=Birthday%20Gift`
 
 ## Development
 
@@ -203,10 +203,10 @@ We have two branches: `master` and `develop`.
 
 ### Client libraries
 
-DistributedBlocks implements client libraries which export core functionality for usage from
+SolarBankesCoinimplements client libraries which export core functionality for usage from
 other programming languages.
 
-* `lib/cgo/` - libDistributedBlocks C client library ( [overview](lib/cgo/README.md), [API reference](docs/libc/API.md) )
+* `lib/cgo/` - libSolarBankesCoinC client library ( [overview](lib/cgo/README.md), [API reference](docs/libc/API.md) )
 
 For further details run `make docs` to generate documetation and read the corresponding README and API references.
 
@@ -221,7 +221,7 @@ make test
 There are integration tests for the CLI and HTTP API interfaces. They have two
 run modes, "stable" and "live.
 
-The stable integration tests will use a DistributedBlocks daemon
+The stable integration tests will use a SolarBankesCoindaemon
 whose blockchain is synced to a specific point and has networking disabled so that the internal
 state does not change.
 
@@ -245,15 +245,15 @@ The `-v` option, show verbose logs.
 
 #### Live Integration Tests
 
-The live integration tests run against a live runnning DistributedBlocks node, so before running the test, we
-need to start a DistributedBlocks node. Since the `cli` integration test requires the rpc interface enabled,
+The live integration tests run against a live runnning SolarBankesCoinnode, so before running the test, we
+need to start a SolarBankesCoinnode. Since the `cli` integration test requires the rpc interface enabled,
 we should start node with `rpc-interface`:
 
 ```sh
 ./run.sh -launch-browser=false -rpc-interface
 ```
 
-After the DistributedBlocks node is up, run the following command to start the live tests:
+After the SolarBankesCoinnode is up, run the following command to start the live tests:
 
 ```sh
 ./ci-scripts/integration-test.live.sh -v
@@ -382,7 +382,7 @@ dep ensure github.com/foo/bar@tag
 ```
 
 ### Configuration Modes
-There are 4 configuration modes in which you can run a DistributedBlocks node:
+There are 4 configuration modes in which you can run a SolarBankesCoinnode:
 - Development Desktop Daemon
 - Server Daemon
 - Electron Desktop Client
@@ -395,7 +395,7 @@ $ ./run.sh
 ```
 
 #### Server Daemon Mode
-The default settings for a DistributedBlocks node are chosen for `Server Daemon`, which is typically run from source.
+The default settings for a SolarBankesCoinnode are chosen for `Server Daemon`, which is typically run from source.
 This mode is usually preferred to be run with security options, though `-disable-csrf` is normal for server daemon mode, it is left enabled by default.
 ```bash
 $ go run cmd/DistributedBlocks/DistributedBlocks.go
@@ -464,7 +464,7 @@ The fingerprint for this key is:
 ```
 pub   ed25519 2017-09-01 [SC] [expires: 2023-03-18]
       10A7 22B7 6F2F FE7B D238  0222 5801 631B D27C 7874
-uid                      GZ-C DistributedBlocks <token@protonmail.com>
+uid                      GZ-C SolarBankesCoin<token@protonmail.com>
 sub   cv25519 2017-09-01 [E] [expires: 2023-03-18]
 ```
 
