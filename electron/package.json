@@ -1,7 +1,7 @@
 {
     "name": "solarbankerscoin",
-    "productName": "SolarBankersCoin",
-    "author": "solarbankerscoin",
+    "productName": "SolarBankers Coin",
+    "author": "Solarbankers Coin",
     "main": "src/electron-main.js",
     "version": "0.24.1",
     "description": "solarbankerscoin wallet",
